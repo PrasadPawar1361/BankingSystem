@@ -31,33 +31,4 @@ java, eclipse, github, database sql.
 
 
 
-# Project Strcture 
 
-Bank Management 
-|--src
-|   |--com.bank.main
-|   |   |--BankingApp.java
-|   |--com.bankmodel
-|   |   |--Account.java
-|   |   |--User.java
-|   |--com.bank.service
-|   |   |--AccountManagement.java
-|   |   |
-|   |
-|
-|
-# Project Strcture 
-
-Bank Management 
-|--src
-|   |--com.bank.main
-|   |   |--BankingApp.java
-|   |--com.bankmodel
-|   |   |--Account.java
-|   |   |--User.java
-|   |--com.bank.service
-|   |   |--AccountManagement.java
-|   |   |
-|   |
-|
-|
