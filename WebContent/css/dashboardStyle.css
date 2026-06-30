@@ -1,0 +1,622 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height:100vh;
+}
+
+/* Header */
+
+.header{
+    background:white;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#1e3c72;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav a:hover{
+    color:#1e3c72;
+}
+
+
+/* ================= CREATE ACCOUNT PAGE ================= */
+
+.create{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.create form{
+    width:450px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.create h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+.create label{
+    display:block;
+    margin:10px 0 5px;
+    font-size:18px;
+}
+
+.create input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.create button,
+.back-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#1e3c72;
+    color:white;
+    cursor:pointer;
+    margin-top:10px;
+    font-size:16px;
+}
+
+.back-btn{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+}
+
+
+/* ================= LOGIN PAGE ================= */
+
+.login-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:75vh;
+}
+
+.login-card{
+    width:400px;
+    background:white;
+    padding:20px;
+
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.login-card h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:25px;
+}
+
+.login-card label{
+    display:block;
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.login-card input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.btn{
+    width:100%;
+    padding:10px;
+   
+    border:none;
+    border-radius:10px;
+    background:#1e3c72;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn-danger{
+    background:#28a745;
+}
+
+/* ================= DASHBOARD PAGE ================= */
+
+.dashboard-box{
+    width:450px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+    margin:50px auto;
+}
+
+.dashboard-box h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:30px;
+}
+
+.dashboard-box a{
+    text-decoration:none;
+}
+
+.dashboard-box button{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    background:#1e3c72;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.dashboard-box button:hover{
+    background:#2a5298;
+    transform:translateY(-2px);
+}
+/* ================= VIEW USER PAGE ================= */
+
+.view-user-container{
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.view-user-box{
+    width:90%;
+    max-width:1100px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.view-user-box h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:25px;
+}
+
+.view-user-box table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.view-user-box th{
+    background:#1e3c72;
+    color:white;
+    padding:15px;
+    font-size:17px;
+}
+
+.view-user-box td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.view-user-box tr:nth-child(even){
+    background:#f4f4f4;
+}
+
+.view-user-box tr:hover{
+    background:#dfe9ff;
+}
+
+/* ================= CREDIT/DEBIT/TRANSFER FORM ================= */
+
+.form-container{
+    display:flex;
+   
+    justify-content:center;
+    align-items:center;
+    min-height:75vh;
+}
+
+.form-box{
+    width:450px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:30px;
+}
+
+.form-box label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:500;
+    font-size:16px;
+}
+
+.form-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.form-box input:focus{
+    border-color:#1e3c72;
+    box-shadow:0 0 5px rgba(30,60,114,.3);
+}
+
+.form-box button{
+    width:100%;
+    padding:8px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    background:#1e3c72;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+.back-btn-link{
+	  width:100%;
+    padding:8px;
+    margin:8px;
+    border:none;
+    border-radius:10px;
+    background:#1e3c72;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.form-box button:hover{
+    background:#2a5298;
+    transform:translateY(-2px);
+}
+
+
+.back-btn{
+    background:#6c757d !important;
+      
+}
+
+.back-btn:hover{
+    background:#5a6268 !important;
+}
+
+/* =========== COMMON FORM PAGE =========== */
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:75vh;
+    padding:20px;
+}
+
+.form-box{
+    width:450px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:30px;
+}
+
+.form-box label{
+    display:block;
+    margin-bottom:2px;
+    font-weight:500;
+    color:#333;
+}
+
+.form-box input{
+    width:100%;
+    padding:8px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.form-box input:focus{
+    border-color:#1e3c72;
+    box-shadow:0 0 5px rgba(30,60,114,.3);
+}
+
+.form-box button{
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:10px;
+    background:#1e3c72;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.form-box button:hover{
+    background:#2a5298;
+}
+
+.back-btn-link{
+    display:block;
+    width:100%;
+    margin-top:15px;
+    padding:8px;
+    text-align:center;
+    text-decoration:none;
+    background:#6c757d;
+    color:white;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.back-btn-link:hover{
+    background:#5a6268;
+}
+
+/* ===== Check Balance Page ===== */
+
+.balance-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:75vh;
+    padding:25px;
+}
+
+.balance-box{
+    width:450px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.balance-box h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:30px;
+}
+
+.balance-box label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:500;
+}
+
+.balance-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.balance-box input:focus{
+    border-color:#1e3c72;
+    box-shadow:0 0 5px rgba(30,60,114,.3);
+}
+
+.balance-box button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#1e3c72;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.balance-box button:hover{
+    background:#2a5298;
+}
+
+.back-btn-link{
+    display:block;
+    width:100%;
+    margin-top:15px;
+    padding:14px;
+    text-align:center;
+    text-decoration:none;
+    background:#6c757d;
+    color:white;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.back-btn-link:hover{
+    background:#5a6268;
+}
+
+/* ===== Common Form Pages ===== */
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:75vh;
+}
+
+.form-box{
+    width:450px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:30px;
+}
+
+.form-box label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:500;
+}
+
+.form-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.form-box input:focus{
+    border-color:#1e3c72;
+    box-shadow:0 0 5px rgba(30,60,114,.3);
+}
+
+.form-box button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#1e3c72;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.form-box button:hover{
+    background:#2a5298;
+}
+
+.back-btn-link{
+    display:block;
+    width:100%;
+    margin-top:15px;
+    padding:14px;
+    background:#6c757d;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.back-btn-link:hover{
+    background:#5a6268;
+}
+
+/* ===== Balance Page ===== */
+
+.balance-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:75vh;
+}
+
+.balance-box{
+    width:450px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.balance-box h2{
+    color:#1e3c72;
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+.balance-box h1{
+    color:#28a745;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.back-btn-link{
+    display:block;
+    width:100%;
+    padding:14px;
+    background:#1e3c72;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.back-btn-link:hover{
+    background:#2a5298;
+}
+/* ================= FOOTER ================= */
+
+.footer{
+    width:100%;
+    background:white;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 -2px 10px rgba(0,0,0,.1);
+    color:#555;
+    margin-top:20px;
+}
